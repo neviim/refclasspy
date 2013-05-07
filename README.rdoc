@@ -3,6 +3,7 @@ Referencia de montagem de classe em python
 Estes arquivos enumerados de 1 a 4 tem finalidade academica mostrar algumas formas de 
 como escrever class em python.
 
+versao: 0.0.1
 
 # --- uso: ref_classe1.py
 #
@@ -42,7 +43,7 @@ print
 print minhaClasse1.x
 print minhaClasse1.y
 print
-#
+# 
 print "Classe, alterando (x) de __slots__ para valor 100"
 minhaClasse1.x = 100
 minhaClasse1.y = 200
