@@ -1,0 +1,76 @@
+Referencia de montagem de classe em python
+
+Estes arquivos enumerados de 1 a 4 tem finalidade academica mostrar algumas formas de 
+como escrever class em python.
+
+
+# --- uso: ref_classe1.py
+#
+minhaClasse1 = myClass()
+minhaClasse2 = myClass()
+#
+print "minhaClasse1"
+print
+print minhaClasse1.__dict__
+print minhaClasse1.x
+print minhaClasse1.y
+print minhaClasse1.c
+print
+
+
+# --- uso: ref_classe2.py
+#
+minhaClasse1 = myClass()
+#
+print "minhaClasse1"
+print
+print minhaClasse1.__slots__
+print minhaClasse1.x
+print minhaClasse1.y
+print
+
+
+# --- uso: ref_classe3.py
+#
+minhaClasse1 = myClass()
+#
+print "Classe, valor (x = 10) em __slots__ , valor (y = 2) em __dict__"
+print
+print minhaClasse1.__dict__
+print minhaClasse1.__slots__
+print
+print minhaClasse1.x
+print minhaClasse1.y
+print
+#
+print "Classe, alterando (x) de __slots__ para valor 100"
+minhaClasse1.x = 100
+minhaClasse1.y = 200
+#
+print minhaClasse1.__dict__
+print minhaClasse1.__slots__
+print
+print minhaClasse1.x
+print minhaClasse1.y
+print 
+
+
+# --- uso da classe
+#
+print "Classe Iter, realiza uma contagem incremental de 2 em 2, pelo metodo next()"
+item = Iter(10)
+#
+# imprime passo a passo 
+print
+print item.next() # retorna 1
+print item.next() # retorna 2
+print item.next() # retorna 3
+print
+#
+# continua a imprimir de onde paro.
+print "inicia o for de onde paro o item.next(), dando continuidade ao incremento de 2 em 2 até 10"
+#
+for i in item:
+	print i
+#
+print
